@@ -1,10 +1,10 @@
-﻿=== EJLS Easy Json-ld Setter ===
+=== EJLS Easy Json-ld Setter ===
 Contributors: hideokamoto
 Donate link: https://note.mu/hideokamoto/n/nd0cecce0e758
 Tags: json-ld
 Requires at least: 4.0.0
 Tested up to: 4.0.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,5 +47,8 @@ Please use "Article" schema.
 2014/09/30 released
 
 == Upgrade Notice ==
+
+= 1.1 =
+Bug Fixed.
 
 == Arbitrary section ==
