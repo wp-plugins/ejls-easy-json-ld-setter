@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: EJLS Easy Json-ld Setter
-Plugin URI: http://wordpress.org/plugins/test-use-sparql-for-saigoku-33/
+Plugin URI: http://wordpress.org/plugins/ejls-easy-json-ld-setter/
 Description: Easy set JSON-ld data on your blog.Now you can set only "article" on schema.org.
 Author: Hidetaka Okamoto
 Version: 1.0
