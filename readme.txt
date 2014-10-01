@@ -4,18 +4,19 @@ Donate link: https://note.mu/hideokamoto/n/nd0cecce0e758
 Tags: json-ld
 Requires at least: 4.0-alpha
 Tested up to: 4.0-alpha
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easy set JSON-ld data on your blog.Now you can set only "article" on schema.org.
+Easy set JSON-ld data on your blog.
 
 == Description ==
 
 Easy set JSON-ld data on your blog.
 
-Now you can set only "article" on schema.org.
+You can set only "article" on schema.org,
 
+and Add “SearchAction” at Front Page.
 
 == Installation ==
 
@@ -46,9 +47,18 @@ Please use "Article" schema.
 = 1.0 =
 2014/09/30 released
 
+= 1.1 =
+2014/09/30 Bug Fixed.
+
+= 1.2 =
+2014/10/01 Add “Search Action”.
+
 == Upgrade Notice ==
 
 = 1.1 =
 Bug Fixed.
+
+= 1.2 =
+Add “Search Action”.
 
 == Arbitrary section ==
