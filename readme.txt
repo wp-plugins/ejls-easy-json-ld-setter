@@ -44,19 +44,17 @@ Please use "Article" schema.
 
 == Changelog ==
 
-= 1.0 =
-2014/09/30 released
+= 1.2 =
+2014/10/01 Add “Search Action”.
 
 = 1.1 =
 2014/09/30 Bug Fixed.
 
-= 1.2 =
-2014/10/01 Add “Search Action”.
+= 1.0 =
+2014/09/30 released
+
 
 == Upgrade Notice ==
-
-= 1.1 =
-Bug Fixed.
 
 = 1.2 =
 Add “Search Action”.
