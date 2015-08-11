@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Structured Data of JSON-LD
- * @version 2.0
+ * @version 2.1
  */
 /*
 Plugin Name: Structured Data of JSON-LD
 Plugin URI: http://wordpress.org/plugins/ejls-easy-json-ld-setter/
 Description: Set Structured Data of "JSON-LD" to your WebSite.schema type that you can use is "Article","Person","WebSite" and "searchAction".
 Author: Hidetaka Okamoto
-Version: 2.0
+Version: 2.1
 Author URI: http://wp-kyoto.net/
 */
 add_action('wp_head','ejls_insert_json_ld');
@@ -17,8 +17,11 @@ function ejls_get_article () {
     if (is_page() || is_single()) {
         if (have_posts()) : while (have_posts()) : the_post();
             $contentArr['@type'] = 'Article';
-            $contentArr['name'] = get_the_title();
-            $contentArr['image'] = wp_get_attachment_url(get_post_thumbnail_id());
+            $contentArr['headline'] = get_the_title();
+            $time = strtotime( get_the_time('c') );
+            $contentArr['datePublished'] = date( 'c', $time );
+
+            $contentArr['image'] = ejls_post_thumbnail();
             $contentArr['url'] = get_permalink();
             $contentArr['articleBody'] = get_the_content();
 
@@ -33,6 +36,27 @@ function ejls_get_article () {
         return $contentArr;
     }
 }
+
+function ejls_catch_that_image() {
+    global $post;
+    if ( preg_match_all( '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches ) ) {
+        $ejls_first_img = $matches[1][0];
+    } else {
+        $ejls_first_img = false;
+    }
+    return $ejls_first_img;
+}
+function ejls_post_thumbnail() {
+    if ( get_post_thumbnail_id() ) {
+        $ejls_img = wp_get_attachment_url( get_post_thumbnail_id() );
+    } elseif( ejls_catch_that_image() ) {
+        $ejls_img = ejls_catch_that_image();
+    } else {
+        $ejls_img = null;
+    }
+    return $ejls_img;
+}
+
 function ejls_get_search_Action($homeUrl){
     $contentArr = array(
         "@type"      => "SearchAction",

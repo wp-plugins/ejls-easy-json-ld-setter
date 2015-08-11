@@ -1,10 +1,10 @@
 === Structured Data of JSON-LD ===
-Contributors: hideokamoto
+Contributors: hideokamoto,shimakyohsuke
 Donate link: https://note.mu/hideokamoto/n/nd0cecce0e758
 Tags: json-ld
 Requires at least: 4.0-alpha
-Tested up to: 4.1
-Stable tag: 2.0
+Tested up to: 4.2
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,8 +20,11 @@ If Front Page, you can use "WebSite" and "searchAction".
 
 IF post.php and page.php, you can use "Article" and "Person".
 
-== Installation ==
+== Contributors ==
 
+- [shimakyohsuke](https://profiles.wordpress.org/shimakyohsuke)
+
+== Installation ==
 
 
 1. Upload `easy-json-ld-setter` directory to the `/wp-content/plugins/` directory
@@ -46,6 +49,9 @@ Try it! -> https://developers.google.com/webmasters/structured-data/testing-tool
 
 == Changelog ==
 
+= 2.1 =
+2015/08/11 Support Article Requirement.
+
 = 2.0 =
 2015/01/20 support "Structured Data Testing Tool"
 
@@ -61,7 +67,7 @@ Try it! -> https://developers.google.com/webmasters/structured-data/testing-tool
 
 == Upgrade Notice ==
 
-= 2.0 =
-support "Structured Data Testing Tool"
+= 2.1 =
+2015/08/11 Support Article Requirement.
 
 == Arbitrary section ==
